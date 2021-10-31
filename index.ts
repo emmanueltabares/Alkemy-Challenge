@@ -1,1 +1,0 @@
-const firstCommit = "First commit"
