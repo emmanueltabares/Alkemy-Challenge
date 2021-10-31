@@ -7,7 +7,7 @@ import { checkToken } from '../middlewares/token';
 const router = express.Router()
 
 router.use('/characters', checkToken, charactersRouter);
-router.use('/movies', moviesRouter)
+router.use('/movies', chekToken, moviesRouter)
 router.use('/auth', usersRouter)
 
 export default router;
