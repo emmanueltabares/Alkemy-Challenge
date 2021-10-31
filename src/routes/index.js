@@ -6,7 +6,7 @@ import { checkToken } from '../middlewares/token';
 
 const router = express.Router()
 
-router.use('/characters', /* checkToken */ charactersRouter);
+router.use('/characters', checkToken, charactersRouter);
 router.use('/movies', moviesRouter)
 router.use('/auth', usersRouter)
 
